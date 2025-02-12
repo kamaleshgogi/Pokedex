@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css"> <!-- Added Flaticon CSS -->
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center my-5">Pokedex</h1>
+		<div class="input-group mb-3 justify-content-center">
+			<input type="text" class="form-control" id="search-input" placeholder="Search for a Pokémon..." style="max-width: 300px;">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary" type="button" id="search-button">
+					<i class="fi fi-rr-search"></i>
+				</button>
+			</div>
+		</div>
+		<div id="card-container" class="row justify-content-center"></div>
+		<div class="text-center my-5">
+			<button id="load-more" class="btn btn-primary">Load More</button>
+		</div>
+	</div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popup-name"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="popup-image" class="img-fluid" src="" alt="Pokemon Image">
+                    <div id="popup-details"></div>
+                    <p id="popup-bio"></p>
+                    <div id="popup-evolution" class="d-flex flex-wrap"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id="catch-btn" class="btn btn-success">Catch</button>
+                    <button id="release-btn" class="btn btn-danger">Release</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catch Modal -->
+    <div id="catch-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Notification</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>🥳 Pokemon caught! 🎉</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>Powered by</p>
+        <img id="Pokemon-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon-logo" class="img-fluid" style="width: 10%;">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>

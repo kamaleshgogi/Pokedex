@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(to bottom right, #fbfbd3, #d1dee7);
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48pt;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the container takes full width */
+    padding: 0 15px; /* Add padding to avoid content touching the edges */
+}
+
+.input-group .form-control {
+    border-radius: 5px 0 0 5px;
+}
+
+.input-group .btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.card {
+    background-color: #fff4dc;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 100%; /* Ensure the card takes full width of the column */
+    max-width: 2250px; /* Adjust the max-width to make the cards larger */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.load-more-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.load-more-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more-container button:hover {
+    background-color: #0056b3;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-header .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#popup img {
+    max-width: 100%;
+}
+
+#popup-evolution img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#popup-evolution img:hover {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+#catch-modal .modal-body p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#popup-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#popup-details p {
+    margin: 0 10px;
+}
